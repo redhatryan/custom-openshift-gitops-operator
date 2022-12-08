@@ -6,6 +6,3 @@ metadata:
     openshift.io/cluster-monitoring: "true"
     kubernetes.io/metadata.name: appdev-openshift-gitops
   name: appdev-openshift-gitops
-spec:
-  finalizers:
-  - kubernetes
