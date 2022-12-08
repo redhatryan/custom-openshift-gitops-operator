@@ -1,4 +1,4 @@
-#Set your variable to capture teams requesting cluster-scoped (priviledged) ArgoCD:
+#Set your variable to capture teams requesting cluster-scoped (privileged) ArgoCD:
 
 export GITOPS_NAMESPACES=appdev
 

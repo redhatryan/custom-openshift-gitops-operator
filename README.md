@@ -18,7 +18,7 @@ oc apply -k openshift-gitops/cluster
 sed "s/GITOPS_NAMESPACES/$GITOPS_NAMESPACES/" openshift-gitops/cluster/subscription-openshift-gitops.yaml | oc apply -f-
 ```
 
-Deploy the cluster-scoped (priviledged) ArgoCD instances
+Deploy the cluster-scoped (privileged) ArgoCD instances
 ```
 oc apply -k .
 ```
