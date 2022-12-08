@@ -27,7 +27,7 @@ oc apply -k .
 
 Deploy GitOps
 ```bash
-./deployement-commands
+./deployment-commands
 ```
 
 Delete everything
