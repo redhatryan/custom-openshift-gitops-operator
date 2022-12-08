@@ -1,0 +1,17 @@
+bases:
+- ../../base
+
+resources:
+- namespace.yaml
+- argocd-application-controller-clusterrolebinding.yaml
+- argocd-server-clusterrolebinding.yaml
+
+patches:
+  - patch: |
+      - op: replace
+        path: /metadata/namespace
+        value: appdev-openshift-gitops
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: ArgoCD
