@@ -12,7 +12,7 @@ Tell the operator where to deploy cluster-scoped ArgoCD GitOps instances
 export GITOPS_NAMESPACES=appdev
 ```
 
-Deploy the Cluster resources and the GitOps Operator and pass the variable.
+Deploy the Cluster resources and the GitOps Operator.
 ```bash
 oc apply -k openshift-gitops/cluster
 sed "s/GITOPS_NAMESPACES/$GITOPS_NAMESPACES/" openshift-gitops/cluster/subscription-openshift-gitops.yaml | oc apply -f-
