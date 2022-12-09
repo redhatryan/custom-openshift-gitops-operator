@@ -9,7 +9,7 @@ Define the team deployment's projects and add a matching Kustomize `overlay` in 
 
 Tell the operator where to deploy cluster-scoped ArgoCD GitOps instances
 ```bash
-export GITOPS_NAMESPACES='appdev, <namespace>, <namespace>'
+export GITOPS_NAMESPACES=appdev, <namespace>, <namespace>
 ```
 
 Deploy the Cluster resources and the GitOps Operator.
